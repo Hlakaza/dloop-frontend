@@ -4748,7 +4748,7 @@ Portlets
 }
 .portlet.box > .portlet-title {
   border-bottom: 0;
-  padding: 0 10px;
+  padding: 0 15px;
   margin-bottom: 0;
   color: #fff;
 }
@@ -4778,10 +4778,10 @@ Portlets
 }
 .portlet.box > .portlet-body {
   background-color: #fff;
-  padding: 10px;
+  padding: 15px;
 }
 .portlet.box.portlet-fullscreen > .portlet-body {
-  padding: 10px;
+  padding: 15px;
 }
 
 /* Light Portlet */
