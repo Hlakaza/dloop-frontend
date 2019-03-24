@@ -1,0 +1,244 @@
+.header-image-background {
+  background-image: url('../assets//header-bg.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 260px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1024;
+}
+.container {
+  width: 100%;
+  max-width: 1920px;
+  display: block;
+}
+
+.welcome-text {
+  padding-top: 65px;
+}
+
+.navbar {
+  margin-top: 15px;
+  border-radius: 0;
+}
+.navbar-brand {
+  height: auto !important;
+  width: 200px;
+  padding: 5px 15px;
+}
+.navbar-default {
+  background-color: #ffffff;
+}
+.navbar-nav > li > a {
+  line-height: 45px;
+}
+@media (min-width: 769px) {
+  .navbar-nav > li::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 35px;
+    background: #dedede;
+    top: 20px;
+  }
+}
+.navbar-toggle {
+  margin-top: 20px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #000;
+  background-color: transparent;
+  border-bottom: 5px solid #fcc134;
+}
+.img-responsive {
+  display: inline-block;
+  max-width: 100%;
+}
+/*************
+Buttons
+**************/
+.btn {
+  text-align: center;
+  background-color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 30px;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #5fc000;
+  color: #ffffff;
+  border: 0;
+}
+.btn-secondary {
+  border: 1px solid #000;
+  color: #000;
+}
+
+.btn-rounded {
+  border-radius: 25px;
+}
+
+select,
+input {
+  width: 100px;
+  border: 1px solid #b4b4b4;
+  border-radius: 0;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body {
+  background-color: #edeef2;
+}
+.main-content {
+  margin-top: 300px;
+}
+.sidebar {
+  width: 300px;
+  position: absolute;
+  padding: 15px 0;
+  margin-bottom: 85px;
+}
+.content-wrapper {
+  margin-left: 315px;
+}
+
+.user-profile {
+  border-radius: 100% !important;
+  max-width: 200px;
+  width: 100%;
+  border: 10px solid #f4f4f4;
+}
+
+.side-nav li {
+  margin: 5px 0;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.nav-icon {
+  font-size: 25px !important;
+  vertical-align: middle;
+  background-color: #e4e5eb;
+  padding: 10px !important;
+  border-radius: 100%;
+  width: 50px !important;
+  height: 50px !important;
+  line-height: 1.3 !important;
+  text-align: center;
+}
+.side-nav li.active {
+  background-color: #fcc134;
+}
+.side-nav li.active .nav-icon {
+  background-color: #e9ad1c;
+}
+
+.side-nav li.active::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent #fcc134;
+  line-height: 0;
+  _border-color: #000000 #000000 #000000 #fcc134;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+  position: absolute;
+  right: -15px;
+  top: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+   padding: 20px 15px;
+}
+
+/***
+Text utilities
+***/
+.text-white {
+  color: #ffffff !important;
+}
+
+@media (max-width: 736px) {
+  .header-image-background {
+    height: 76px;
+  }
+  .welcome-text {
+    display: none;
+  }
+  .navbar {
+    margin-top: 0;
+  }
+  .navbar-nav > li > a {
+    line-height: 25px;
+  }
+  .main-content {
+    margin-top: 85px;
+  }
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+  .content-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/**
+Spacing
+**/
+.marg-top-sm {
+  margin-top: 1rem;
+}
+.marg-left-sm {
+  margin-left: 1rem;
+}
+.marg-bottom-sm {
+  margin-bottom: 1rem;
+}
+.marg-right-sm {
+  margin-right: 1rem;
+}
+.padd-top-sm {
+  padding-top: 1rem;
+}
+.padd-left-sm {
+  padding-left: 1rem;
+}
+.padd-bottom-sm {
+  padding-bottom: 1rem;
+}
+.padd-right-sm {
+  padding-right: 1rem;
+}
+
+/**
+Backgrounds
+**/
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-light--grey {
+  background-color: edeef2;
+}
+.bg-dark--gray {
+ background-color :#d3d5dd
+}
