@@ -85,9 +85,14 @@ Buttons
   border: 1px solid #000;
   color: #000;
 }
+.btn-gray {
+  background: #89a0b1;
+  color: #fff
+}
+
 
 .btn-rounded {
-  border-radius: 25px;
+  border-radius: 25px !important;
 }
 
 .form-control {
@@ -117,12 +122,17 @@ body {
 .content-wrapper {
   margin-left: 315px;
 }
-
+.content-wrapper{
+  margin-bottom: 85px;
+}
 .user-profile {
   border-radius: 100% !important;
   max-width: 200px;
   width: 100%;
   border: 10px solid #f4f4f4;
+}
+.portlet.box.blue-hoki img {
+  max-width: 133px;
 }
 
 .side-nav li {
@@ -317,4 +327,13 @@ Backgrounds
 }
 .bg-cyan--blue {
   background-color: #beebed
+}
+
+.btn-xs {
+  padding: 10px 15px !important;
+  font-size: 11px !important;
+}
+
+.flush-pad-all{
+   padding: 40px !important;
 }
