@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Q Software Systems - Live By The Code" />
+    <meta
+      name="description"
+      content="Human Resources Tools For Skills Development & Organisational Development"
+    />
+    <meta
+      name="keywords"
+      content="Human Resources HR Tools software solutions IT keywords Skills Development Organisation"
+    />
+    <meta name="distribution" content="global" />
+    <meta name="location" content="South Africa, Johannesburg, Gauteng" />
+    <meta name="robots" content="index, follow, all" />
+    <meta name="no-archive" content="googlebot" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <title>Dloop | Dashboards | Human Resources</title>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="./styles/bootstrap-v3.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="./styles/components.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/plugins.css" rel="stylesheet" type="text/css" />
+    <link
+      href="./styles/jquery.nouislider.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!--Header--->
+    <div class="header-image-background">
+      <div class="container">
+        <div class="welcome-text text-white">
+          <span class="text-small bold">22 February 2019</span>
+          <h1>Welcome Phathisile</h1>
+          <a
+            onclick="javascript:window.location='/dplogin/console/LogoffActn.action'"
+            class="btn btn-rounded pull-right marg-left-sm"
+          >
+            <span style="color:white"> LOG OUT </span>
+          </a>
+          <a href="javascript:notEnabled();" class="btn btn-rounded pull-right">
+            <span style="color:white"> SUPPORT </span>
+          </a>
+        </div>
+      </div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navigation"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img
+                src="./assets/dHR_white.png"
+                alt="DLOOP Logo"
+                class="img-responsive"
+              />
+            </a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="./">Marketplace</a>
+              </li>
+              <li><a href="dash-report.html">Dash & Report</a></li>
+              <li class="active">
+                <a href="skills-development.html">Skills Development</a>
+              </li>
+              <li><a href="mi-tools.html">Mi Tools</a></li>
+              <li><a href="profile.html">DLOOP Profile</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--//Header--->
+
+    <!-- Content -->
+
+    <div class="main-content container">
+
+      <div class="sidebar bg-white">
+        <div class="text-center">
+          <img class="user-profile" alt="user image" src="./assets/user.jpg" />
+          <p class="text-small text-center marg-top-sm">Logged in as</p>
+          <h3 class="text-center">Phathisile Sibanda</h3>
+        </div>
+        <ul class="nav side-nav">
+          <li>
+            <a href="skills-development.html">
+              <i class="nav-icon fas fa-graduation-cap marg-right-sm"></i>
+              Performance Evaluation
+            </a>
+          </li>
+          <li>
+            <a href="./performance-management.html">
+              <i class="nav-icon far fa-calendar-check marg-right-sm"></i>
+              Performance Management
+            </a>
+          </li>
+          <li class="active">
+              <a href="./remuneration.html">
+            <i class="nav-icon fas fa-user-tie marg-right-sm"></i>Remuneration
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="content-wrapper bg-white">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="portlet light">
+              <div class="portlet-body">
+                <div class="portlet-title">
+                  <h3> Setup</h3>
+                </div>
+                <div class="portlet-body">
+                  <div class="tab-content">
+                    <div class="portlet box grey">
+                      <div class="portlet-title">
+                        <div class="caption bold">
+                          Earnings
+                        </div>
+                      </div>
+                      <div class="portlet-body">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <label class="bold">Item Description</label>
+                              <div class="check-group">
+                              <input class="check-mark" type="checkbox" name="remember" value="1">
+                              <label class="checked marg-left-sm">
+                                Basic Salary
+                              </label>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Value – Pull from employment contract</label>
+                              <input class="form-control" type="text"/>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <div class="check-group">
+                              <input class="check-mark" type="checkbox" name="remember" value="1">
+                              <label class="checked marg-left-sm">
+                               Commission
+                              </label>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <input class="form-control" type="text"/>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <div class="check-group">
+                              <input class="check-mark" type="checkbox" name="remember" value="1">
+                              <label class="checked marg-left-sm">
+                               Bonus
+                              </label>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <input class="form-control" type="text"/>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <div class="check-group">
+                              <input class="check-mark" type="checkbox" name="remember" value="1">
+                              <label class="checked marg-left-sm">
+                                13th Cheque
+                              </label>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <input class="form-control" type="text"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="portlet box grey">
+                        <div class="portlet-title">
+                          <div class="caption bold" id="reviews">
+                            Contributiions
+                          </div>
+                        </div>
+                        <div class="portlet-body">
+                          <div class="row">
+                            <div class="col-sm-12 marg-bottom-sm">
+                              <button class="btn btn-secondary">Add New Item</button>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div class="form-group">
+                                  <label class="bold">Item Description</label>
+                                  <div class="check-group">
+                                  <input class="check-mark" type="checkbox" name="remember" value="1">
+                                  <label class="checked marg-left-sm">
+                                    Medical Aid
+                                  </label>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label>Employee Contribution %</label>
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label>Employer Contribution %</label>
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div class="form-group">
+                                  <div class="check-group">
+                                  <input class="check-mark" type="checkbox" name="remember" value="1">
+                                  <label class="checked marg-left-sm">
+                                   Provident Fund
+                                  </label>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div class="form-group">
+                                  <div class="check-group">
+                                  <input class="check-mark" type="checkbox" name="remember" value="1">
+                                  <label class="checked marg-left-sm">
+                                      Unemployment Insurance Fund
+                                  </label>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portlet box grey">
+                        <div class="portlet-title">
+                          <div class="caption bold" id="reviews">
+                            Deductions
+                          </div>
+                        </div>
+                        <div class="portlet-body">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                  <label class="bold">Item Description</label>
+                                  <div class="check-group">
+                                  <input class="check-mark" type="checkbox" name="remember" value="1">
+                                  <label class="checked marg-left-sm">
+                                    Pay as you earn
+                                  </label>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Tax Bracket</label>
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                  <div class="check-group">
+                                  <input class="check-mark" type="checkbox" name="remember" value="1">
+                                  <label class="checked marg-left-sm">
+                                  Unpaid Leave
+                                  </label>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                            </div>
+
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                  <div class="check-group">
+                                  <input class="check-mark" type="checkbox" name="remember" value="1">
+                                  <label class="checked marg-left-sm">
+                                     Loans
+                                  </label>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
+                    <div id="performance-categories">
+                      <div class="portlet box grey">
+                        <div class="portlet-title">
+                          <div class="caption">
+                            Payroll
+                          </div>
+                        </div>
+                        <div class="portlet-body">                        
+                            <div class="table-scrollable">
+                              <table class="table table-bordered table-hover">
+                                <thead>
+                                  <tr class="bg-light--gold">
+                                    <th>FY 2019/2020</th>
+                                    <th>Earnings to date</th>
+                                    <th>Contributions to date</th>
+                                    <th>Deductions to date</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Tebogo Molusi</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Phathisile Sibanda</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Okeletsi Nyathi</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Mari Ver Naand</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lerato Nyathi</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Paul Young</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>James Young</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Sizwe Hlophe</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Faith Baard</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Andile Yetha</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Xolani Sithole</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                          
+                          </div>
+                            <div class="table-scrollable">
+                              <table class="table table-bordered table-hover">
+                                <thead>
+                                  <tr class="bg-cyan--blue">
+                                    <th>FY 2019/2020</th>
+                                    <th>Earnings to date</th>
+                                    <th>Contributions to date</th>
+                                    <th>Deductions to date</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Tebogo Molusi</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Phathisile Sibanda</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Okeletsi Nyathi</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Mari Ver Naand</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lerato Nyathi</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Paul Young</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>James Young</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Sizwe Hlophe</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Faith Baard</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Andile Yetha</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Xolani Sithole</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                      <div class="portlet box grey">
+                        <div class="portlet-title">
+                          <div class="caption bold">
+                           Employee Details
+                          </div>
+                        </div>
+                        <div class="portlet-body">
+                          <div class="row">
+                            <div class="col-sm-6">
+                               <span class="bold marg-right-sm">First Name</span> <span class="marg-left-sm">Tebogo</span> <br/>
+                               <span class="bold marg-right-sm">Job Title</span> <span class="marg-left-sm">Chief Executive Officer</span> 
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="bold marg-right-sm">Last Name</span> <span class="marg-left-sm">Molusi</span> <br/>
+                                <span class="bold marg-right-sm">Job Title</span> <span class="marg-left-sm">GD0001</span> 
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="dotted-seperator"></div>
+                            </div>
+                          </div>
+                            <div class="form-group">
+                                <label>Select remuneration Catergory</label>
+                                <select class="form-control">
+                                  <option>Earnings</option>
+                                </select>
+                              </div>                 
+                            <div class="table-scrollable">
+                              <table class="table table-bordered table-hover">
+                                <thead>
+                                  <tr class="bg-light--gold">
+                                    <th>FY 2019/2020</th>
+                                    <th>Basic Salary</th>
+                                    <th>Commission</th>
+                                    <th>Bonus</th>
+                                    <th>13th Cheque</th>
+                                    <th>Totla</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td> Month 1</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 2</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 4</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 5</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 6</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 7</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 8</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                          
+                          </div>
+                          <div class="doted-seperator"></div>
+                          <h4 class="marg-top-sm marg-top-lg">Employee Monthly Tax Table</h4>
+                          <div class="table-scrollable marg-bottom-sm">
+                              <table class="table table-bordered table-hover">
+                                <thead>
+                                  <tr class="bg-cyan--blue">
+                                    <th>FY 2019/2020</th>
+                                    <th>Basic Salary</th>
+                                    <th>Commission</th>
+                                    <th>Bonus</th>
+                                    <th>13th Cheque</th>
+                                    <th>Totla</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td> Month 1</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 2</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 4</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 5</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 6</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 7</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td> Month 8</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                          
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer container bg-dark--gray">
+      <span class="text-small text-gray"
+        >&copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Q Digital Agency - Digitize your world</span
+      >
+    </footer>
+    <!-- jQuery library -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--Slider-->
+    <script src="./scripts/jquery.nouislider.all.min.js"></script>
+  </body>
+</html>
