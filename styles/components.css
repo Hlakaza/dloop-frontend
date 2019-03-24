@@ -4844,12 +4844,12 @@ Portlets
   margin-top: 9px;
 }
 .portlet.light > .portlet-title > .inputs > .portlet-input .input-icon > .form-control {
-  height: 30px;
+  height: 50px;
   padding: 2px 26px 3px 10px;
   font-size: 13px;
 }
 .portlet.light > .portlet-title > .inputs > .portlet-input > .form-control {
-  height: 30px;
+  height: 50px;
   padding: 3px 10px;
   font-size: 13px;
 }

@@ -90,14 +90,11 @@ Buttons
   border-radius: 25px;
 }
 
-select,
-input {
-  width: 100px;
-  border: 1px solid #b4b4b4;
-  border-radius: 0;
-  height: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+.form-control {
+  height: 50px !important;
+}
+label {
+   font-weight: bold
 }
 body {
   background-color: #edeef2;
@@ -160,6 +157,21 @@ body {
   right: -15px;
   top: 20px;
 }
+.bold {
+  font-weight: bold
+}
+.portlet-sub--header{
+  font-weight: bold;
+   font-size: 18px;
+   border-bottom: 1px dotted #ccc;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+}
+.dotted-sepertor {
+  border-bottom: 1px dotted #ccc;
+  margin: 20px;
+  display: block;
+}
 
 .footer {
   position: fixed;
@@ -173,6 +185,11 @@ Text utilities
 .text-white {
   color: #ffffff !important;
 }
+.text-cyan--blue{
+  color:  #18c6cc !important;
+}
+
+
 
 @media (max-width: 736px) {
   .header-image-background {
