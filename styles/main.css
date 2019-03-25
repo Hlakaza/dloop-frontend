@@ -2,7 +2,7 @@
   background-image: url('../assets//header-bg.jpg');
   background-size: cover;
   width: 100%;
-  height: 260px;
+  height: 160px;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,7 +16,7 @@
 }
 
 .welcome-text {
-  padding-top: 65px;
+  padding: 30px 0;
 }
 
 .navbar {
@@ -90,7 +90,17 @@ Buttons
   color: #fff
 }
 
-
+.welcome-text h1 {
+  display: inline;
+}
+.welcome-text span.text-small {
+  display: block;
+  padding-bottom: 25px;
+}
+.welcome-text a.btn {
+  bottom: -15px;
+  position: relative;
+}
 .btn-rounded {
   border-radius: 25px !important;
 }
@@ -111,13 +121,12 @@ body {
   background-color: #edeef2;
 }
 .main-content {
-  margin-top: 300px;
+  margin-top: 248px;
 }
 .sidebar {
   width: 300px;
   position: fixed;
   padding: 15px 0;
-  margin-bottom: 85px;
 }
 .content-wrapper {
   margin-left: 315px;
