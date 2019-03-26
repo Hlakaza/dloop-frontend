@@ -89,6 +89,12 @@ Buttons
   background: #89a0b1;
   color: #fff
 }
+.btn-icon {
+  border: 0;
+  border-radius: 100% !important;
+  width: 40px;
+  height: 40px;
+}
 
 .welcome-text h1 {
   display: inline;
