@@ -148,6 +148,7 @@ body {
 }
 .portlet.box.blue-hoki img {
   max-width: 133px;
+  width: 100%;
 }
 
 .side-nav li {
