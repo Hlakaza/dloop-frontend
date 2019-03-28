@@ -43,6 +43,9 @@
     background: #dedede;
     top: 20px;
   }
+  .content-wrapper {
+    min-height: 768px;
+  }
 }
 .navbar-toggle {
   margin-top: 20px;
@@ -131,7 +134,7 @@ body {
 }
 .sidebar {
   width: 300px;
-  position: fixed;
+  position: absolute;
   padding: 15px 0;
 }
 .content-wrapper {
@@ -213,9 +216,9 @@ body {
 }
 
 .footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
-   padding: 20px 15px;
+  padding: 20px 15px;
 }
 
 .check-mark {

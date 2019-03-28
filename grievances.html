@@ -79,18 +79,22 @@
         <p class="text-small text-center marg-top-sm">Logged in as</p>
         <h3 class="text-center">Phathisile Sibanda</h3>
       </div>
-      <!-- <ul class="nav side-nav">
+      <ul class="nav side-nav">
+        <li>
+          <a href="./dash-report.html">
+            <i class="nav-icon far fa-calendar-check marg-right-sm"></i> Reports
+          </a>
+        </li>
         <li class="active">
-          <i class="nav-icon fas fa-graduation-cap marg-right-sm"></i> 
-          Dev Space
+          <a href="./grievances.html">
+            <i class="nav-icon fas fa-graduation-cap marg-right-sm"></i>
+            Grievance
+          </a>
         </li>
-        <li>
-          <i class="nav-icon far fa-calendar-check marg-right-sm"></i> Events
-        </li>
-        <li>
-          <i class="nav-icon fas fa-user-tie marg-right-sm"></i>Training
-        </li>
-      </ul> -->
+        <!-- <li>
+              <i class="nav-icon fas fa-user-tie marg-right-sm"></i>Training
+            </li> -->
+      </ul>
     </div>
 
     <div class="content-wrapper bg-white">
@@ -99,29 +103,182 @@
           <div class="profile-content">
             <div class="portlet light">
               <div class="portlet-title">
-               <h3>Grievances</h3>  
+                <h3>Grievances</h3>
               </div>
               <div class="portlet-body">
-                  <div class="portlet box grey">
-                      <div class="portlet-title">
-                        <div class="caption bold">
-                            Grievance
+                <div class="portlet box grey">
+                  <div class="portlet-title">
+                    <div class="caption bold">
+                      Grievance
+                    </div>
+                  </div>
+                  <div class="portlet-body">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Grievance Against</label>
+                          <select class="form-control">
+                            <option hidden="" selected="" disabled="">Organisation</option>
+                            <option>Organisation</option>
+                          </select>
                         </div>
                       </div>
-                      <div class="portlet-body">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <div class="form-group">
-                              <label>Select</label>
-                              <select class="form-control">
-                                <option hidden="" selected="" disabled="">Employee 01</option>
-                                <option>Employee 02</option>
-                              </select>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Type</label>
+                          <select class="form-control">
+                            <option hidden="" selected="" disabled="">Group</option>
+                            <option>group members</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label>Detailed Description</label>
+                          <textarea class="form-control" placeholder="Type here"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Date of Grievance</label>
+                          <div>
+                            <div class="input-group date">
+                              <input type="text" class="form-control">
+                              <span class="input-group-addon"><a href="javascript:;" class="blue-steel"><i
+                                    class="fa fa-calendar fa-lg"></i></a></span>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portlet box grey">
+                  <div class="portlet-title">
+                    <div class="caption bold">
+                      HR VIEW and Individual against whom the grievance is brought forward
+                    </div>
+                  </div>
+                  <div class="portlet-body">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label>Grievance Status</label>
+                          <select class="form-control">
+                            <option hidden="" selected="" disabled="">New</option>
+                            <option>Old</option>
+                          </select>
+                        </div>
+                      </div>
+                      <label class="col-sm-12">Grievance by</label>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input disabled placeholder="Tebogo Molusi" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input disabled placeholder="Matthew Steward" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label>Grievance Against</label>
+                          <select class="form-control">
+                            <option hidden="" selected="" disabled="">Organisation</option>
+                            <option>Organisation</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label>Detailed Description</label>
+                          <textarea class="form-control" placeholder="Type here"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Date of Grievance</label>
+                          <input disabled placeholder="18 March 2019" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Stage</label>
+                          <select class="form-control">
+                            <option hidden="" selected="" disabled="">Initial stage</option>
+                            <option>Initial stage</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Assignee</label>
+                          <select class="form-control">
+                            <option selected="" disabled="">David Young</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portlet box grey">
+                  <div class="portlet-title">
+                    <div class="caption bold">
+                      Progress Report
+                    </div>
+                  </div>
+                  <div class="portlet-body">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label>Action Description</label>
+                          <textarea class="form-control" placeholder="Type here"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Date</label>
+                          <div>
+                            <div class="input-group date">
+                              <input type="text" class="form-control">
+                              <span class="input-group-addon"><a href="javascript:;" class="blue-steel"><i
+                                    class="fa fa-calendar fa-lg"></i></a></span>
                             </div>
                           </div>
                         </div>
                       </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Action by</label>
+                          <input type="text" class="form-control" placeholder="David Young">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Confirmation by complainant</label>
+                          <input type="text" class="form-control" placeholder="David Young">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Outcome</label>
+                          <select class="form-control">
+                            <option>Resolved</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label>Resolution</label>
+                          <textarea class="form-control" placeholder="Type here"></textarea>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -130,7 +287,8 @@
     </div>
   </div>
   <footer class="footer container bg-dark--gray">
-      <span class="text-small text-gray">&copy; <script>document.write(new Date().getFullYear())</script> Q Digital Agency - Digitize your world</span>
+    <span class="text-small text-gray">&copy;
+      <script>document.write(new Date().getFullYear())</script> Q Digital Agency - Digitize your world</span>
   </footer>
   <!-- jQuery library -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
