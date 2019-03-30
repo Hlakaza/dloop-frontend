@@ -292,6 +292,16 @@ Text utilities
   .table.table-bordered  th{
     text-align: center
 }
+.display-block{
+  display: block;
+}
+.modal {
+  background: rgba(0, 0, 0, 0.68);
+}
+#application .modal-body {
+  position: relative;
+  padding: 15px 30px;
+}
 /**
 Spacing
 **/
@@ -359,4 +369,9 @@ Backgrounds
 
 .flush-pad-all{
    padding: 40px !important;
+}
+@media (min-width: 992px){
+.modal-lg {
+    width: 1024px;
+}
 }
