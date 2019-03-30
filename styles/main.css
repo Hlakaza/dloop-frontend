@@ -92,6 +92,10 @@ Buttons
   background: #89a0b1;
   color: #fff
 }
+.btn-danger {
+  background: red;
+  color: #fff
+}
 .btn-icon {
   border: 0;
   border-radius: 100% !important;
@@ -295,7 +299,7 @@ Spacing
   margin-top: 1rem;
 }
 .marg-top-lg {
-  margin-top: 3rem;
+  margin-top: 3rem !important;
 }
 .marg-left-sm {
   margin-left: 1rem;
