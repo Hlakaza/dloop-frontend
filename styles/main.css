@@ -302,6 +302,13 @@ Text utilities
   position: relative;
   padding: 15px 30px;
 }
+.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+
 /**
 Spacing
 **/
@@ -373,5 +380,11 @@ Backgrounds
 @media (min-width: 992px){
 .modal-lg {
     width: 1024px;
+}
+}
+@media (min-width: 1440px){
+.portlet.light .portlet-body {
+  padding-top: 8px;
+  height: 250px;
 }
 }
