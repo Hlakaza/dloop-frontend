@@ -16,21 +16,21 @@
   <meta name="MSSmartTagsPreventParsing" content="true" />
   <title>Dloop | Dashboards | Human Resources</title>
   <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#f8aa4e" />
+  <meta name="msapplication-navbutton-color" content="#000" />
   <meta name="msapplication-starturl" content="/?utm_source=homescreen" />
   <!-- iOS Safari -->
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="application-name" content="Dloop" />
   <meta name="apple-mobile-web-app-title" content="DLOOP" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#f8aa4e" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
   <link rel="manifest" href="./manifest.json" />
-  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#f8aa4e" />
+  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#000" />
   <link rel="shortcut icon" href="assets/icons/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-TileColor" content="#000" />
   <meta name="msapplication-config" content="assets/icons/browserconfig.xml" />
   <meta name="theme-color" content="#ffffff" />
 
@@ -843,6 +843,24 @@
       document.getElementById(id).classList.remove('display-block')
     }
   </script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('./sw.js');
+      console.log('Service Worker registered!!')
+    });
+  } else {
+    console.log('Service worker not registered!!')
+  }
+  </script>
+  <script src="https://hlakaza.github.io/adt/addtohome.js"></script>
+  <!-- <script type="text/javascript">
+  setTimeout(function (event) {
+				event.addToHomescreen();
+	}, 1000);
+
+  </script> -->
 </body>
 
 </html>

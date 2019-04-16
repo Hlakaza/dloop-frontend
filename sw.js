@@ -1,33 +1,26 @@
 var staticCacheName = 'dloop-v0';
-
-self.addEventListener('install', function (event) {
-  event.waitUntil(
-    caches.open(staticCacheName).then(function (cache) {
-      return cache.addAll([
-        'manifest.json'
-      ]);
+// sw.js
+self.addEventListener('install', e => {
+  e.waitUntil(
+    // after the service worker is installed,
+    // open a new cache
+    caches.open(staticCacheName).then(cache => {
+        // add all URLs of resources we want to cache
+        return cache.addAll([
+          './',
+          '/index.html',
+          './manifest.json',
+          './assets/'
+        ]);
     })
   );
 });
-self.addEventListener('activate', function (event) {
-  console.log('ServiceWorker: Activate');
-  event.waitUntil(self.clients.claim());
-});
-
-self.addEventListener('fetch', function (event) {
-  if (event.request.url.indexOf('/browser-sync/') !== -1) {
-    event.respondWith(fetch(event.request));
-    return;
-  }
-
-});
-
-self.addEventListener("beforeinstallprompt", event => {
-  event.preventDefault();
-  installButton.disabled = false;
-  installButton.addEventListener("click", async e => {
-    installButton.disabled = true;
-    const { userChoice } = await event.prompt();
-    console.info(`user choice was: ${userChoice}`);
-  });
+// When the webpage goes to fetch files, we intercept that request and serve up the matching files
+// if we have them
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+        caches.match(event.request).then(function(response) {
+            return response || fetch(event.request);
+        })
+    );
 });
