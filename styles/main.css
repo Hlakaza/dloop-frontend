@@ -135,6 +135,7 @@ body {
 }
 .main-content {
   margin-top: 248px;
+  position: relative;
 }
 .sidebar {
   width: 300px;
