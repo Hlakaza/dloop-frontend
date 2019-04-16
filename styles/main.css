@@ -64,7 +64,7 @@
 /*************
 Buttons
 **************/
-.btn {
+.btn.btn-rounded, .btn.btn-primary, .btn.btn-secondary {
   text-align: center;
   background-color: transparent;
   display: inline-block;
