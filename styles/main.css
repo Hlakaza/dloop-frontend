@@ -138,16 +138,16 @@ body {
   position: relative;
 }
 .sidebar {
-  width: 300px;
-  position: absolute;
   padding: 15px 0;
 }
-.content-wrapper {
-  margin-left: 315px;
-}
+ .hide-overflow{
+   overflow: hidden;
+ }
+
 .content-wrapper{
   margin-bottom: 85px;
 }
+
 .user-profile {
   border-radius: 100% !important;
   max-width: 200px;
@@ -386,6 +386,6 @@ Backgrounds
 @media (min-width: 1440px){
 .portlet.light .portlet-body {
   padding-top: 8px;
-  height: 250px;
+  /* height: 250px; */
 }
 }

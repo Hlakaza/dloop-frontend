@@ -7,8 +7,8 @@ self.addEventListener('install', e => {
     caches.open(staticCacheName).then(cache => {
         // add all URLs of resources we want to cache
         return cache.addAll([
-          './',
-          '/index.html',
+          // './',
+          // '/index.html',
           './manifest.json',
           './assets/'
         ]);
