@@ -80,13 +80,13 @@ Buttons
 }
 
 .btn-primary {
-  background-color: #5fc000;
-  color: #ffffff;
-  border: 0;
+  background-color: #5fc000 !important;
+  color: #ffffff !important;
+  border: 0 !important;
 }
 .btn-secondary {
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid #000 !important;
+  color: #000 !important;
 }
 .btn-gray {
   background: #89a0b1;
